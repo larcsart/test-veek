@@ -1,0 +1,17 @@
+.HeaderBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  span {
+    padding-right: rem(10px);
+    font-size: size(small);
+  }
+  svg {
+    width: rem(25px);
+    margin: 0 rem(20px);
+    path {
+      fill: #5f6368;
+    }
+  }
+}

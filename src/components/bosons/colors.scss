@@ -1,0 +1,41 @@
+$colors: (
+  primary:   #1a73e8,
+  secondary: #f8f9fa,
+  danger:    #f75757,
+  success:   #00a650,
+  warning:   #febc11,
+  light: (
+    lightest: #fff,
+    light:    #f8f9fa,
+    base:     #eeebeb,
+    medium:   #e0e0e0
+  ),
+  dark: (
+    light:   #c9c9c7,
+    base:    #3c4043,
+    medium:  #b1afaf,
+    darkest: #000
+  )
+) !default;
+
+@function color($color, $complementary: null) {
+  @if map-has-key($colors, $color) {
+    $type: map-get($colors, $color);
+
+    @if $complementary == null {
+      @if type-of($type) == map {
+        @return map-get(map-get($colors, $color), 'base');
+      }
+
+      @else {
+        @return map-get($colors, $color);
+      }
+    }
+
+    @else {
+      @return map-get(map-get($colors, $color), $complementary);
+    }
+  }
+
+  @return inherit;
+}

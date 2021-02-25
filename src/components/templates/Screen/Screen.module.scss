@@ -1,0 +1,15 @@
+.Screen {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+
+  .main {
+    background-color: color(light, lightest);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 100%;
+  }
+}

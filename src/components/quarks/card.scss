@@ -1,0 +1,7 @@
+%card-config {
+  @extend %card-radius;
+  @extend %card-bg;
+  @extend %card-padding;
+  position: relative;
+  width: 100%;
+}

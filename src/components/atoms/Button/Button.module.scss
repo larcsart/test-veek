@@ -1,0 +1,9 @@
+.Button {
+  @extend %button-config;
+  &.primary {
+    @extend %button-primary-color;
+  }
+  &.secondary {
+    @extend %button-secondary-color;
+  }
+}

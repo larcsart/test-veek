@@ -1,0 +1,6 @@
+.container {
+  margin: auto;
+  @extend %flex-default-column;
+  width: 100%;
+  max-width: 584px;
+}

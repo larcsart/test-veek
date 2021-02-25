@@ -1,0 +1,15 @@
+.Container {
+  display: flex;
+  padding: rem(20px);
+  width: 100%;
+
+  &.column {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &.row {
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

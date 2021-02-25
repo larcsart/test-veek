@@ -1,0 +1,8 @@
+%button-config {
+  @extend %button-radius;
+  @extend %button-padding;
+  @extend %button-font;
+  cursor: pointer;
+  outline: none;
+  width: auto;
+}

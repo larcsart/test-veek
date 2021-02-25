@@ -1,0 +1,19 @@
+html,
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  font-family: $font-family;
+}
+
+* {
+  box-sizing: border-box;
+}

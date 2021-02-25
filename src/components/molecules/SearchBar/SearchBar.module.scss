@@ -1,0 +1,35 @@
+.SearchBar {
+  @extend %flex-default-column;
+  width: 100%;
+  .input-container {
+    @extend %flex-default;
+    position: relative;
+    width: 100%;
+  }
+  .search-icon {
+    width: rem(15px);
+    height: rem(15px);
+    position: absolute;
+    left: rem(15px);
+    path {
+      fill: #9aa0a6;
+    }
+  }
+
+  .keyboard-icon {
+    position: absolute;
+    right: rem(50px);
+    width: rem(19px);
+    height: rem(11px);
+  }
+
+  .microphone-icon {
+    position: absolute;
+    right: rem(15px);
+    width: rem(24px);
+  }
+
+  .input {
+    padding-left: rem(45px);
+  }
+}

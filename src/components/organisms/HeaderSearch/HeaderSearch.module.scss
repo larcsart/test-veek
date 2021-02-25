@@ -1,0 +1,11 @@
+.HeaderSearch {
+  width: 100%;
+  .container {
+    @extend %flex-default-column;
+    width: 100%;
+    button {
+      width: auto;
+      margin-top: rem(30px);
+    }
+  }
+}

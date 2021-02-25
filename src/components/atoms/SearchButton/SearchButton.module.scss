@@ -1,0 +1,16 @@
+.SearchButton {
+  background-color: color(light, lightest);
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  padding: 0.4rem 1rem;
+
+  svg {
+    height: rem(16px);
+    width: rem(16px);
+
+    path {
+      fill: color(dark, base);
+    }
+  }
+}
